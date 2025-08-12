@@ -1,11 +1,83 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario USB</title>
+</head>
+
+<body>
 <form action="#" method="post">
-    <p> Elegir memoria USB:<input list="listaUSB"> </p>
+    <p>
+        Elegir memoria USB:
+        <input list="listaUSB" name="usb1">
+    </p>
     <datalist id="listaUSB">
         <option value="8">
-        <option value = "16">
+        <option value="16">
         <option value="32">
         <option value="64">
     </datalist>
 
+    <p>
+        Elegir memoria USB:
+        <input list="listUSB" name="usb2">
+    </p>
+    <datalist id="listUSB">
+        <option value="g">
+        <option value="34">
+        <option value="16">
+        <option value="8">
+        <option value="2">
+    </datalist>
+
+    <p>
+        <label>
+            <input type="checkbox" value="acepta" name="condiciones" checked>
+            Acepto condiciones
+        </label>
+    </p>
+
+    <p>
+        Sexo:
+        <label><input type="radio" name="sexo" value="h"> Hombre</label>
+        <label><input type="radio" name="sexo" value="m"> Mujer</label>
+    </p>
+
+    <p>
+        Cantidad:
+        <input type="number" name="numero" step="0.1">
+    </p>
+
+    <p>
+        Contraseña:
+        <input type="password" name="clave" autofocus>
+    </p>
+
+    <p>
+        Email:
+        <input type="email" name="correo" multiple>
+    </p>
+
+    <p>
+        Nombre:
+        <input type="text" required name="nombre">
+    </p>
+
+    <p>
+        Apellidos:
+        <input type="text" placeholder="Escribe los dos apellidos" name="ape" size="25">
+    </p>
+
+    <p>
+        Localidad:
+        <input type="text" value="Valencia" name="localidad" size="16" minlength="2">
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
 </form>
+
+</body>
+</html>
